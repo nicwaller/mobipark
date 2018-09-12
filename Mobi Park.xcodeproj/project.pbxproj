@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		EA2BF2AF2148D63800F28241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2AE2148D63800F28241 /* AppDelegate.swift */; };
-		EA2BF2B12148D63800F28241 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B02148D63800F28241 /* FirstViewController.swift */; };
-		EA2BF2B32148D63800F28241 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B22148D63800F28241 /* SecondViewController.swift */; };
+		EA2BF2B12148D63800F28241 /* StationTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B02148D63800F28241 /* StationTableController.swift */; };
+		EA2BF2B32148D63800F28241 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B22148D63800F28241 /* MapViewController.swift */; };
 		EA2BF2B62148D63800F28241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B42148D63800F28241 /* Main.storyboard */; };
 		EA2BF2B82148D63A00F28241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B72148D63A00F28241 /* Assets.xcassets */; };
 		EA2BF2BB2148D63A00F28241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B92148D63A00F28241 /* LaunchScreen.storyboard */; };
@@ -37,8 +37,8 @@
 /* Begin PBXFileReference section */
 		EA2BF2AB2148D63800F28241 /* Mobi Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobi Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2BF2AE2148D63800F28241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA2BF2B02148D63800F28241 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EA2BF2B22148D63800F28241 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EA2BF2B02148D63800F28241 /* StationTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationTableController.swift; sourceTree = "<group>"; };
+		EA2BF2B22148D63800F28241 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EA2BF2B52148D63800F28241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA2BF2B72148D63A00F28241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA2BF2BA2148D63A00F28241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				EA2BF2AE2148D63800F28241 /* AppDelegate.swift */,
-				EA2BF2B02148D63800F28241 /* FirstViewController.swift */,
-				EA2BF2B22148D63800F28241 /* SecondViewController.swift */,
+				EA2BF2B02148D63800F28241 /* StationTableController.swift */,
+				EA2BF2B22148D63800F28241 /* MapViewController.swift */,
 				EA2BF2B42148D63800F28241 /* Main.storyboard */,
 				EA2BF2B72148D63A00F28241 /* Assets.xcassets */,
 				EA2BF2B92148D63A00F28241 /* LaunchScreen.storyboard */,
@@ -259,9 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA2BF2B32148D63800F28241 /* SecondViewController.swift in Sources */,
+				EA2BF2B32148D63800F28241 /* MapViewController.swift in Sources */,
 				EA2BF2AF2148D63800F28241 /* AppDelegate.swift in Sources */,
-				EA2BF2B12148D63800F28241 /* FirstViewController.swift in Sources */,
+				EA2BF2B12148D63800F28241 /* StationTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
