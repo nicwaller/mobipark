@@ -8,13 +8,14 @@
 
 import UIKit
 
-class StationTableController: UIViewController {
+class StationTableController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var stationTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadStations()
+        setupTable()
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +30,28 @@ class StationTableController: UIViewController {
             print(String(data: data, encoding: .utf8)!)
         }
         task.resume()
+    }
+    
+    func setupTable() {
+        stationTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Nearby Stations"
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = stationTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "foo bar"
+        return cell
     }
 
 
