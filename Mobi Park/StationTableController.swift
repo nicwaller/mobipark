@@ -12,6 +12,8 @@ class StationTableController: UIViewController, UITableViewDataSource {
 
     @IBOutlet weak var stationTableView: UITableView!
     
+    var stationList: [[String: Any]] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         loadStations()
@@ -28,6 +30,17 @@ class StationTableController: UIViewController, UITableViewDataSource {
         let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
             guard let data = data else { return }
             print(String(data: data, encoding: .utf8)!)
+            do {
+                let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                if let result = jsonResponse["result"] as? [[String: Any]] {
+                    self.stationList = result
+                    DispatchQueue.main.async {
+                        self.stationTableView.reloadData()
+                    }
+                }
+            } catch {
+                
+            }
         }
         task.resume()
     }
@@ -45,12 +58,17 @@ class StationTableController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return stationList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = stationTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = "foo bar"
+        if let station: [String: Any] = stationList[indexPath.row] {
+//            print(station)
+            cell.textLabel?.text = station["name"] as? String
+        } else {
+            cell.textLabel?.text = String(indexPath.row) + " Error"
+        }
         return cell
     }
 
