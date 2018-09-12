@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA2BF2AF2148D63800F28241 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2AE2148D63800F28241 /* AppDelegate.swift */; };
+		EA2BF2B12148D63800F28241 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B02148D63800F28241 /* FirstViewController.swift */; };
+		EA2BF2B32148D63800F28241 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2B22148D63800F28241 /* SecondViewController.swift */; };
+		EA2BF2B62148D63800F28241 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B42148D63800F28241 /* Main.storyboard */; };
+		EA2BF2B82148D63A00F28241 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B72148D63A00F28241 /* Assets.xcassets */; };
+		EA2BF2BB2148D63A00F28241 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA2BF2B92148D63A00F28241 /* LaunchScreen.storyboard */; };
+		EA2BF2C62148D63A00F28241 /* Mobi_ParkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2C52148D63A00F28241 /* Mobi_ParkTests.swift */; };
+		EA2BF2D12148D63A00F28241 /* Mobi_ParkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2BF2D02148D63A00F28241 /* Mobi_ParkUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA2BF2C22148D63A00F28241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2BF2A32148D63800F28241 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2BF2AA2148D63800F28241;
+			remoteInfo = "Mobi Park";
+		};
+		EA2BF2CD2148D63A00F28241 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA2BF2A32148D63800F28241 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA2BF2AA2148D63800F28241;
+			remoteInfo = "Mobi Park";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA2BF2AB2148D63800F28241 /* Mobi Park.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mobi Park.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2BF2AE2148D63800F28241 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA2BF2B02148D63800F28241 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		EA2BF2B22148D63800F28241 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EA2BF2B52148D63800F28241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA2BF2B72148D63A00F28241 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA2BF2BA2148D63A00F28241 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA2BF2BC2148D63A00F28241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2BF2C12148D63A00F28241 /* Mobi ParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobi ParkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2BF2C52148D63A00F28241 /* Mobi_ParkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobi_ParkTests.swift; sourceTree = "<group>"; };
+		EA2BF2C72148D63A00F28241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA2BF2CC2148D63A00F28241 /* Mobi ParkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mobi ParkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA2BF2D02148D63A00F28241 /* Mobi_ParkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobi_ParkUITests.swift; sourceTree = "<group>"; };
+		EA2BF2D22148D63A00F28241 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA2BF2A82148D63800F28241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2BE2148D63A00F28241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2C92148D63A00F28241 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA2BF2A22148D63800F28241 = {
+			isa = PBXGroup;
+			children = (
+				EA2BF2AD2148D63800F28241 /* Mobi Park */,
+				EA2BF2C42148D63A00F28241 /* Mobi ParkTests */,
+				EA2BF2CF2148D63A00F28241 /* Mobi ParkUITests */,
+				EA2BF2AC2148D63800F28241 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA2BF2AC2148D63800F28241 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BF2AB2148D63800F28241 /* Mobi Park.app */,
+				EA2BF2C12148D63A00F28241 /* Mobi ParkTests.xctest */,
+				EA2BF2CC2148D63A00F28241 /* Mobi ParkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA2BF2AD2148D63800F28241 /* Mobi Park */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BF2AE2148D63800F28241 /* AppDelegate.swift */,
+				EA2BF2B02148D63800F28241 /* FirstViewController.swift */,
+				EA2BF2B22148D63800F28241 /* SecondViewController.swift */,
+				EA2BF2B42148D63800F28241 /* Main.storyboard */,
+				EA2BF2B72148D63A00F28241 /* Assets.xcassets */,
+				EA2BF2B92148D63A00F28241 /* LaunchScreen.storyboard */,
+				EA2BF2BC2148D63A00F28241 /* Info.plist */,
+			);
+			path = "Mobi Park";
+			sourceTree = "<group>";
+		};
+		EA2BF2C42148D63A00F28241 /* Mobi ParkTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BF2C52148D63A00F28241 /* Mobi_ParkTests.swift */,
+				EA2BF2C72148D63A00F28241 /* Info.plist */,
+			);
+			path = "Mobi ParkTests";
+			sourceTree = "<group>";
+		};
+		EA2BF2CF2148D63A00F28241 /* Mobi ParkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA2BF2D02148D63A00F28241 /* Mobi_ParkUITests.swift */,
+				EA2BF2D22148D63A00F28241 /* Info.plist */,
+			);
+			path = "Mobi ParkUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA2BF2AA2148D63800F28241 /* Mobi Park */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2BF2D52148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi Park" */;
+			buildPhases = (
+				EA2BF2A72148D63800F28241 /* Sources */,
+				EA2BF2A82148D63800F28241 /* Frameworks */,
+				EA2BF2A92148D63800F28241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mobi Park";
+			productName = "Mobi Park";
+			productReference = EA2BF2AB2148D63800F28241 /* Mobi Park.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA2BF2C02148D63A00F28241 /* Mobi ParkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2BF2D82148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi ParkTests" */;
+			buildPhases = (
+				EA2BF2BD2148D63A00F28241 /* Sources */,
+				EA2BF2BE2148D63A00F28241 /* Frameworks */,
+				EA2BF2BF2148D63A00F28241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2BF2C32148D63A00F28241 /* PBXTargetDependency */,
+			);
+			name = "Mobi ParkTests";
+			productName = "Mobi ParkTests";
+			productReference = EA2BF2C12148D63A00F28241 /* Mobi ParkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA2BF2CB2148D63A00F28241 /* Mobi ParkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA2BF2DB2148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi ParkUITests" */;
+			buildPhases = (
+				EA2BF2C82148D63A00F28241 /* Sources */,
+				EA2BF2C92148D63A00F28241 /* Frameworks */,
+				EA2BF2CA2148D63A00F28241 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA2BF2CE2148D63A00F28241 /* PBXTargetDependency */,
+			);
+			name = "Mobi ParkUITests";
+			productName = "Mobi ParkUITests";
+			productReference = EA2BF2CC2148D63A00F28241 /* Mobi ParkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA2BF2A32148D63800F28241 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Nic Waller";
+				TargetAttributes = {
+					EA2BF2AA2148D63800F28241 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					EA2BF2C02148D63A00F28241 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EA2BF2AA2148D63800F28241;
+					};
+					EA2BF2CB2148D63A00F28241 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = EA2BF2AA2148D63800F28241;
+					};
+				};
+			};
+			buildConfigurationList = EA2BF2A62148D63800F28241 /* Build configuration list for PBXProject "Mobi Park" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA2BF2A22148D63800F28241;
+			productRefGroup = EA2BF2AC2148D63800F28241 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA2BF2AA2148D63800F28241 /* Mobi Park */,
+				EA2BF2C02148D63A00F28241 /* Mobi ParkTests */,
+				EA2BF2CB2148D63A00F28241 /* Mobi ParkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA2BF2A92148D63800F28241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2BF2BB2148D63A00F28241 /* LaunchScreen.storyboard in Resources */,
+				EA2BF2B82148D63A00F28241 /* Assets.xcassets in Resources */,
+				EA2BF2B62148D63800F28241 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2BF2148D63A00F28241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2CA2148D63A00F28241 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA2BF2A72148D63800F28241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2BF2B32148D63800F28241 /* SecondViewController.swift in Sources */,
+				EA2BF2AF2148D63800F28241 /* AppDelegate.swift in Sources */,
+				EA2BF2B12148D63800F28241 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2BD2148D63A00F28241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2BF2C62148D63A00F28241 /* Mobi_ParkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA2BF2C82148D63A00F28241 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA2BF2D12148D63A00F28241 /* Mobi_ParkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA2BF2C32148D63A00F28241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2BF2AA2148D63800F28241 /* Mobi Park */;
+			targetProxy = EA2BF2C22148D63A00F28241 /* PBXContainerItemProxy */;
+		};
+		EA2BF2CE2148D63A00F28241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA2BF2AA2148D63800F28241 /* Mobi Park */;
+			targetProxy = EA2BF2CD2148D63A00F28241 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA2BF2B42148D63800F28241 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2BF2B52148D63800F28241 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA2BF2B92148D63A00F28241 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA2BF2BA2148D63A00F28241 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA2BF2D32148D63A00F28241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA2BF2D42148D63A00F28241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA2BF2D62148D63A00F28241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi Park/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-Park";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA2BF2D72148D63A00F28241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi Park/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-Park";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EA2BF2D92148D63A00F28241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi ParkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-ParkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobi Park.app/Mobi Park";
+			};
+			name = Debug;
+		};
+		EA2BF2DA2148D63A00F28241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi ParkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-ParkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mobi Park.app/Mobi Park";
+			};
+			name = Release;
+		};
+		EA2BF2DC2148D63A00F28241 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi ParkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-ParkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobi Park";
+			};
+			name = Debug;
+		};
+		EA2BF2DD2148D63A00F28241 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Mobi ParkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nicwaller.Mobi-ParkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mobi Park";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA2BF2A62148D63800F28241 /* Build configuration list for PBXProject "Mobi Park" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2BF2D32148D63A00F28241 /* Debug */,
+				EA2BF2D42148D63A00F28241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2BF2D52148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi Park" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2BF2D62148D63A00F28241 /* Debug */,
+				EA2BF2D72148D63A00F28241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2BF2D82148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi ParkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2BF2D92148D63A00F28241 /* Debug */,
+				EA2BF2DA2148D63A00F28241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA2BF2DB2148D63A00F28241 /* Build configuration list for PBXNativeTarget "Mobi ParkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA2BF2DC2148D63A00F28241 /* Debug */,
+				EA2BF2DD2148D63A00F28241 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA2BF2A32148D63800F28241 /* Project object */;
+}
