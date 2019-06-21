@@ -10,9 +10,12 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class StationTableController: UIViewController, UITableViewDataSource {
+class StationTableController: UIViewController, UITableViewDataSource, CLLocationManagerDelegate {
     
     @IBOutlet weak var stationTableView: UITableView!
+    
+    var myLocation: CLLocation = CLLocation(latitude: 49.28292, longitude: -123.1154539)
+    let locationManager = CLLocationManager()
     
 //    Raw data downloaded from API
     var stationList: [[String: Any]] = []
@@ -21,6 +24,8 @@ class StationTableController: UIViewController, UITableViewDataSource {
     var nearbyStationList: [NearbyStation] = []
     struct NearbyStation {
         var name: String
+        var stationId: String
+        var intersection: String
         var location: CLLocation
         var distance: CLLocationDistance // recalculated from location
         var total_slots: Int
@@ -33,6 +38,26 @@ class StationTableController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         loadStations()
         setupTable()
+        setupLocationTracking()
+    }
+    
+    func setupLocationTracking() {
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        myLocation = locations[0]
+        self.recalculateDistances()
+        DispatchQueue.main.async {
+            self.stationTableView.reloadData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,7 +68,8 @@ class StationTableController: UIViewController, UITableViewDataSource {
     let f: MKDistanceFormatter = MKDistanceFormatter()
     
     func recalculateDistances() {
-        let myLocation: CLLocation = CLLocation(latitude: 49.28292, longitude: -123.1154539)
+        print("recalculateDistances")
+        print(myLocation)
         //        what is my current location actually? TODO: remove this
         
         for (var element) in nearbyStationList {
@@ -61,9 +87,12 @@ class StationTableController: UIViewController, UITableViewDataSource {
                 let jsonResponse = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
                 if let result = jsonResponse["result"] as? [[String: Any]] {
 //                    self.stationList = result
-                    let downtown: CLLocation = CLLocation(latitude: 49.28292, longitude: -123.1154539)
+//                    let downtown: CLLocation = CLLocation(latitude: 49.28292, longitude: -123.1154539)
+                    let downtown = self.myLocation
                     for (element) in result {
                         let name: String = element["name"] as! String
+                        let stationId: String = String(name.prefix(4))
+                        let intersection: String = name.replacingOccurrences(of: stationId, with: "").trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
                         let coordinates: String = element["coordinates"] as! String
                         let coord_parts: [String] = coordinates.components(separatedBy: ",")
                         let latitude: Double? = Double(coord_parts[0].trimmingCharacters(in: .whitespacesAndNewlines))
@@ -75,12 +104,13 @@ class StationTableController: UIViewController, UITableViewDataSource {
                         let available_bikes: Int = element["avl_bikes"] as! Int
                         let operative: Bool = element["operative"] as! Bool
 
-                        let station = NearbyStation(name: name, location: location, distance: distance, total_slots: total_slots, free_slots: free_slots, available_bikes: available_bikes, operative: operative)
-                        
-                        // If the station is more than 1 km away, that's too far
-                        if distance > CLLocationDistance(1000) {
+                        // If there are no free slots, don't bother showing it
+                        if free_slots == 0 {
                             continue
                         }
+
+                        // Add to list view
+                        let station = NearbyStation(name: name, stationId: stationId, intersection: intersection, location: location, distance: distance, total_slots: total_slots, free_slots: free_slots, available_bikes: available_bikes, operative: operative)
                         self.nearbyStationList.append(station)
                     }
                     self.recalculateDistances()
@@ -114,7 +144,22 @@ class StationTableController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = stationTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let station = nearbyStationList[indexPath.row]
-        cell.textLabel?.text = station.name + " -- " + f.string(fromDistance: station.distance)
+        cell.textLabel?.text = f.string(fromDistance: station.distance) + " to " + station.intersection
+        if station.operative == false {
+            cell.backgroundColor = UIColor.red
+        } else {
+            if station.free_slots <= 3 {
+//                cell.backgroundColor = UIColor.yellow
+                cell.textLabel?.textColor = UIColor.lightGray
+            } else {
+                cell.textLabel?.textColor = UIColor.black
+            }
+        }
+        if station.distance > 3000 {
+            cell.textLabel?.textColor = UIColor.lightGray
+        } else {
+            cell.textLabel?.textColor = UIColor.black
+        }
         return cell
     }
 
